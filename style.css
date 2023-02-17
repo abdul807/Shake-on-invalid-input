@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+input{
+    outline: none;
+    padding: 20px;
+    border: 2px solid rgb(39, 126, 27);
+}
+
+input:invalid{
+    border: 2px solid rgb(185, 38, 38);
+    animation: invalid 0.3s 7;
+}
+
+
+
+@keyframes invalid {
+    25%{
+        translate: 6px 0;
+    }
+
+    50%{
+        translate: -6px 0;
+    }
+
+    75%{
+        translate: 6px 0;
+    }
+}
